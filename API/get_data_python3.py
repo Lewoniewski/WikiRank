@@ -14,7 +14,7 @@ for key,value in js["result"].items():
 
 limit=5
 
-print ("Wersje językowe o najwyższej jakości:")
+print ("Languages with the highest quality:")
 iteracja=0
 for nazwa in sorted(quality, key=quality.get, reverse=True):
     iteracja+=1
@@ -22,7 +22,7 @@ for nazwa in sorted(quality, key=quality.get, reverse=True):
     print (nazwa +" : "+str(quality[nazwa]))
 
 print ("-------------")
-print ("Najpopularniejsze wersje językowe:")
+print ("The most popular languages:")
 iteracja=0
 for nazwa in sorted(popularity, key=popularity.get, reverse=True):
     iteracja+=1
